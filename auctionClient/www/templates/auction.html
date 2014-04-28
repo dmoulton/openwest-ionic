@@ -1,5 +1,33 @@
-<ion-view title="Playlist">
+<ion-view title="Auction">
   <ion-content class="has-header">
-    <h1>Auction</h1>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="/img/auction.jpg">
+        <h2>{{auction.title}}</h2>
+        <p>The current bid is ${{auction.current_bid}} on {{auction.bids}} bids</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="{{auction.image_src}}">
+        <p>
+          {{auction.description}}
+        </p>
+
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="javascript:;" ng-click="openModal()">
+          <i class="icon ion-android-checkmark"></i>
+          Bid
+        </a>
+
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+
+    </div>
   </ion-content>
 </ion-view>
