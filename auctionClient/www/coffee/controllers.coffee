@@ -1,30 +1,49 @@
 angular.module("auction.controllers", []).controller("AppCtrl", ($scope) ->
 ).controller("AuctionsCtrl", ($scope,auctionSvc) ->
-  $scope.auctions = auctionSvc.getAuctions()
-  return
-).controller "AuctionCtrl", ($scope, $stateParams, $ionicModal, auctionSvc) ->
-  $scope.auction = auctionSvc.getAuction($stateParams['auctionId'])
+  auctionSvc.getAuctions().then (result) ->
+    $scope.auctions = result.data
+    return
 
+).controller "AuctionCtrl", ($scope, $stateParams, $ionicModal, auctionSvc) ->
+  auctionSvc.getAuction($stateParams['auctionId']).then (result) ->
+    $scope.auction = result.data
+    return
+
+  # bid modal
   $ionicModal.fromTemplateUrl("/templates/bid.html",
     scope: $scope
     animation: "slide-in-up"
   ).then (modal) ->
-    $scope.modal = modal
+    $scope.bidModal = modal
     return
 
-  $scope.openModal = ->
-    $scope.modal.show()
+  # share modal
+  $ionicModal.fromTemplateUrl("/templates/share.html",
+    scope: $scope
+    animation: "slide-in-up"
+  ).then (modal) ->
+    $scope.shareModal = modal
     return
 
-  $scope.closeModal = ->
-    $scope.modal.hide()
+  #Control modals
+  $scope.openModal = (m) ->
+    switch m
+      when "bid" then $scope.bidModal.show()
+      when "share" then $scope.shareModal.show()
+    return
+
+  $scope.closeModal = (m) ->
+    switch m
+      when "bid" then $scope.bidModal.hide()
+      when "share" then $scope.shareModal.hide()
     return
 
   #Cleanup the modal when we're done with it!
   $scope.$on "$destroy", ->
-    $scope.modal.remove()
+    $scope.bidModal.remove()
+    $scope.shareModal.remove()
     return
 
   $scope.placeBid = ->
-    $scope.modal.remove()
+    $scope.bidModal.remove()
     return
