@@ -1,0 +1,19 @@
+2014-05-09 10:44:23.454 HelloCordova[87688:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-09 10:44:23.464 HelloCordova[87688:70b] Unlimited access to network resources
+2014-05-09 10:44:23.467 HelloCordova[87688:70b] Fix applied for database locations?: YES
+2014-05-09 10:44:23.489 HelloCordova[87688:70b] [CDVTimer][statusbar] 7.552028ms
+2014-05-09 10:44:23.489 HelloCordova[87688:70b] [CDVTimer][TotalPluginStartup] 8.038044ms
+2014-05-09 10:44:23.562 HelloCordova[87688:70b] Resetting plugins due to page load.
+2014-05-09 10:44:23.959 HelloCordova[87688:70b] Finished load of: file:///Users/dave/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BBBFD7B3-607C-46B9-B8AD-EDE8B156FEE9/HelloCordova.app/www/index.html#/tab/dash
+2014-05-09 12:00:41.536 HelloCordova[89137:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-09 12:00:41.724 HelloCordova[89137:70b] Unlimited access to network resources
+2014-05-09 12:00:43.687 HelloCordova[89137:70b] [CDVTimer][statusbar] 281.796038ms
+2014-05-09 12:00:43.688 HelloCordova[89137:70b] [CDVTimer][TotalPluginStartup] 283.075988ms
+2014-05-09 12:00:43.840 HelloCordova[89137:70b] Resetting plugins due to page load.
+2014-05-09 12:00:44.541 HelloCordova[89137:70b] Finished load of: file:///Users/dave/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BBBFD7B3-607C-46B9-B8AD-EDE8B156FEE9/HelloCordova.app/www/index.html#/tab/dash
+2014-05-09 12:20:55.651 HelloCordova[91977:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-09 12:20:55.658 HelloCordova[91977:70b] Unlimited access to network resources
+2014-05-09 12:20:55.682 HelloCordova[91977:70b] [CDVTimer][statusbar] 7.336974ms
+2014-05-09 12:20:55.682 HelloCordova[91977:70b] [CDVTimer][TotalPluginStartup] 7.783949ms
+2014-05-09 12:20:55.738 HelloCordova[91977:70b] Resetting plugins due to page load.
+2014-05-09 12:20:55.919 HelloCordova[91977:70b] Finished load of: file:///Users/dave/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BBBFD7B3-607C-46B9-B8AD-EDE8B156FEE9/HelloCordova.app/www/index.html#/tab/dash

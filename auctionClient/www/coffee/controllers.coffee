@@ -38,7 +38,6 @@ angular.module("auction.controllers", []).controller("AppCtrl", ($scope) ->
       when "share" then $scope.shareModal.hide()
     return
 
-  #Cleanup the modal when we're done with it!
   $scope.$on "$destroy", ->
     $scope.bidModal.remove()
     $scope.shareModal.remove()
