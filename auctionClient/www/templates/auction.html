@@ -3,13 +3,13 @@
     <div class="list card">
 
       <div class="item item-avatar">
-        <img src="/img/auction.jpg">
+        <img src="http://localhost:3000/images/auction.jpg">
         <h2>{{auction.title}}</h2>
-        <p>The current bid is ${{auction.current_bid}} on {{auction.bids}} bids</p>
+        <p>The current bid is ${{auction.current_bid}}</p>
       </div>
 
       <div class="item item-body">
-        <img class="full-image" src="{{auction.image_src}}">
+        <img ng-src="{{auction.image_src}}" width="50%" class="bidscreen">
         <p>
           {{auction.description}}
         </p>
